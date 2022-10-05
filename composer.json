@@ -1,5 +1,5 @@
 {
-    "name": "fynn-digital/checkout-sdk",
+    "name": "fynn-digital/sdk-php",
     "description": "Integrate the fynn subscription billing platform into your application.",
     "type": "library",
     "autoload": {
