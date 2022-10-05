@@ -1,4 +1,6 @@
-# Easy subscription billing with fynn platform
+# Easy subscription billing with Fynn platform
+
+![Logo](./assets/welcome_header.png)
 
 The Fynn platform is a subscription management platform. This is the official documentation for the Fynn SDK.
 
