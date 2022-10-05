@@ -1,0 +1,22 @@
+{
+    "name": "fynn-digital/checkout-sdk",
+    "description": "Integrate the fynn subscription billing platform into your application.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Fynn\\Sdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fynn Developers",
+            "email": "sdk@fynn.eu"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "guzzlehttp/guzzle": "^7"
+    }
+}
