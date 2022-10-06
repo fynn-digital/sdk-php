@@ -8,6 +8,7 @@ class CreateProductCartRequest
 {
     private string $productId;
     private ?string $debitorId;
+    private ?string $trialPeriod;
 
     /**
      * @var CreateProductCartComponentRequest[]
@@ -16,10 +17,12 @@ class CreateProductCartRequest
 
     public function __construct(
         ?string $debitorId,
-        string $productId
+        string $productId,
+        ?string $trialPeriod = null
     ) {
         $this->debitorId = $debitorId;
         $this->productId = $productId;
+        $this->trialPeriod = $trialPeriod;
         $this->components = [];
     }
 
@@ -33,7 +36,8 @@ class CreateProductCartRequest
         return [
             'productId' => $this->productId,
             'debitorId' => $this->debitorId,
-            'components' => array_map(fn (CreateProductCartComponentRequest $component) => $component->toArray(), $this->components)
+            'components' => array_map(fn (CreateProductCartComponentRequest $component) => $component->toArray(), $this->components),
+            'trialPeriod' => $this->trialPeriod
         ];
     }
 }

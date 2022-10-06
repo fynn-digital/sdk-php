@@ -7,6 +7,7 @@ namespace Fynn\Sdk\V1\Subscription;
 use Fynn\Sdk\V1\Api\ApiException;
 use Fynn\Sdk\V1\Subscription\Request\CancelSubscriptionRequest;
 use Fynn\Sdk\V1\Subscription\Request\ChangeSubscriptionComponentQuantityRequest;
+use Fynn\Sdk\V1\Subscription\Request\ExtendSubscriptionTrialRequest;
 use Fynn\Sdk\V1\Subscription\Response\SubscriptionProductResponse;
 use Fynn\Sdk\V1\Subscription\Response\SubscriptionResponse;
 use GuzzleHttp\ClientInterface;
@@ -152,5 +153,69 @@ class SubscriptionService
         }
 
         return array_map(fn (array $item) => new SubscriptionProductResponse($item), $data);
+    }
+
+    /**
+     * Extends the trial period of a subscription. A trial can only be extended if the subscription is in trial.
+     *
+     * @throws ApiException
+     */
+    public function extendTrial(string $subscriptionId, ExtendSubscriptionTrialRequest $request): void
+    {
+        try {
+            $this->client->request(
+                'POST',
+                sprintf('/api/subscriptions/%s/trial/extend', $subscriptionId),
+                [
+                    'body' => json_encode($request->toArray())
+                ]
+            );
+        } catch (ClientException $e) {
+            throw ApiException::fromThrowable($e);
+        }
+    }
+
+    /**
+     * Cancels the trial period of a subscription. A trial can only be cancelled if the subscription is in trial.
+     * The subscription will be canceled immediately. No invoices will be created.
+     */
+    public function cancelTrial(string $subscriptionId): void
+    {
+        try {
+            $this->client->request(
+                'POST',
+                sprintf('/api/subscriptions/%s/trial/cancel', $subscriptionId)
+            );
+        } catch (ClientException $e) {
+            throw ApiException::fromThrowable($e);
+        }
+    }
+
+    /**
+     * Activates the subscription. The subscription will be billed from the next billing date.
+     *
+     * If a trial period is specified, the subscription will start a trial-phase and will be activated on the trial end date.
+     * During that period, no invoices will be created.
+     *
+     * @param string $subscriptionId
+     * @param string|null $trialPeriod
+     *
+     * @throws ApiException
+     */
+    public function activateSubscription(string $subscriptionId, ?string $trialPeriod = null): void
+    {
+        try {
+            $this->client->request(
+                'POST',
+                sprintf('/api/subscriptions/%s/activate', $subscriptionId),
+                [
+                    'body' => json_encode([
+                        'trialPeriod' => $trialPeriod
+                    ])
+                ]
+            );
+        } catch (ClientException $e) {
+            throw ApiException::fromThrowable($e);
+        }
     }
 }
