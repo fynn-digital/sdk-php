@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+    build-test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+            - uses: php-actions/composer@v5 # or alternative dependency management
+            - uses: php-actions/phpunit@v3
+              with:
+                  configuration: "phpunit.xml.dist"
+            - uses: php-actions/php-cs-fixer@v2
+              with:
+                  args: "--diff --dry-run --verbose"
