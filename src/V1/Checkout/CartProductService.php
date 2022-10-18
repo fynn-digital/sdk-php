@@ -40,9 +40,11 @@ class CartProductService
         return new CreateCartResponse(json_decode($response->getBody()->getContents(), true)['data']);
     }
 
-    public function generateCartLink(CreateCartResponse $createCartResponse, bool $isSandbox = false): string
+    public function generateCartLink(CreateCartResponse $createCartResponse, string $username, bool $isSandbox = false): string
     {
-        $url = $isSandbox ? 'https://checkout.sandbox.customerfront.app' : 'https://checkout.customerfront.app';
+        $url = $isSandbox ? 'https://%s.sandbox.customerfront.app' : 'https://%s.customerfront.app';
+
+        $url = sprintf($url, $username);
 
         return sprintf(
             '%s/checkout/cart?c=%s',
@@ -51,11 +53,11 @@ class CartProductService
         );
     }
 
-    public function changeProductCartQuantity(string $cartId, string $cartToken, string $productCartComponentId, int $quantity): void
+    public function changeProductCartQuantity(string $cartLineItemId, string $cartToken, string $productCartComponentId, int $quantity): void
     {
         $this->client->request(
-            'PUT',
-            '/api/v1/cart-product/' . $cartId . '/component/' . $productCartComponentId,
+            'POST',
+            '/api/v1/checkout/cart-line-items/'. $cartLineItemId .'/component/'. $productCartComponentId .'/quantity',
             [
                 'headers' => [
                     'X-Auth-Token' => $cartToken
