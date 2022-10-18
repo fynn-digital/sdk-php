@@ -29,7 +29,7 @@ class DebitorService
     {
         try {
             $response = $this->client->request('POST', '/api/debitors', [
-                'body' => $request->toArray()
+                'body' => json_encode($request->toArray())
             ]);
         } catch (ClientException $exception) {
             throw ApiException::fromThrowable($exception);
@@ -42,7 +42,7 @@ class DebitorService
     {
         try {
             $response = $this->client->request('POST', sprintf('/api/debitors/%s/addresses', $debitorId), [
-                'body' => $request->toArray(),
+                'body' => json_encode($request->toArray()),
             ]);
         } catch (ClientException $e) {
             throw ApiException::fromThrowable($e);
@@ -65,7 +65,7 @@ class DebitorService
             throw ApiException::fromThrowable($exception);
         }
 
-        return new DebitorResponse(json_decode($response->getBody()->getContents(), true));
+        return new DebitorResponse(json_decode($response->getBody()->getContents(), true)['data']);
     }
 
     public function getDebitorAddress(string $addressId): ?DebitorAddressResponse
@@ -81,5 +81,29 @@ class DebitorService
         }
 
         return new DebitorAddressResponse(json_decode($response->getBody()->getContents(), true)['data']);
+    }
+
+    /**
+     * @param string $debitorId
+     *
+     * @return DebitorAddressResponse[]
+     */
+    public function getDebitorAddresses(string $debitorId): array
+    {
+        try {
+            $response = $this->client->request('GET', sprintf('/api/debitors/%s/addresses', $debitorId));
+        } catch (ClientException $e) {
+            if ($e->getResponse()->getStatusCode() === 404) {
+                return [];
+            }
+
+            throw ApiException::fromThrowable($e);
+        }
+
+        $addresses = json_decode($response->getBody()->getContents(), true)['data'];
+
+        return array_map(function ($address) {
+            return new DebitorAddressResponse($address);
+        }, $addresses);
     }
 }

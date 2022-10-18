@@ -1,0 +1,26 @@
+{
+  "data": {
+    "subscriptionId": "806c0681-eaef-4cdb-a1ef-fa683ff7a37b",
+    "debitorId": "af3f7f74-a993-4189-bf89-2bbb4cdba19b",
+    "status": "STATUS_ACTIVE",
+    "trialEndsOn": null,
+    "subscriptionProductIds": [
+      "77f1f2d4-29ea-428d-8e8c-b589441a4af5"
+    ],
+    "billingPeriod": null,
+    "billingAllignmentDayOfMonth": null,
+    "cancellationDate": null,
+    "createdAt": "2022-10-05T17:33:05+00:00",
+    "documentNumber": "4U8DL8PYLQ",
+    "alias": null,
+    "paymentMethodId": "f81ca9a2-c338-481c-8bd6-68b730df51f6",
+    "invoiceAddressId": "ff6d6c02-d770-4f55-8776-d22fd6cf08f5"
+  },
+  "_transitions": {
+    "806c0681-eaef-4cdb-a1ef-fa683ff7a37b": [
+      "cancel",
+      "pause",
+      "bill"
+    ]
+  }
+}

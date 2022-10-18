@@ -46,6 +46,9 @@ class InvoiceService
         return $response->getBody()->getContents();
     }
 
+    /**
+     * @return InvoiceResponse[]
+     */
     public function getDebitorInvoices(string $debitorId, int $page = 1, int $limit = 25): array
     {
         try {
@@ -62,6 +65,9 @@ class InvoiceService
         return $invoices;
     }
 
+    /**
+     * @return InvoiceResponse[]
+     */
     public function getInvoices(int $page = 1, int $limit = 25): array
     {
         try {

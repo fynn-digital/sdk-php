@@ -81,4 +81,17 @@ class SubscriptionResponse
     {
         return $this->data['subscriptionProductIds'];
     }
+
+    public function getTrialEndsOn(): ?\DateTimeImmutable
+    {
+        return $this->data['trialEndsOn'] ? new \DateTimeImmutable($this->data['trialEndsOn']) : null;
+    }
+
+    /**
+     * Date when subscription was cancelled.
+     */
+    public function getCancellationDate(): ?\DateTimeImmutable
+    {
+        return $this->data['cancellationDate'] ? new \DateTimeImmutable($this->data['cancellationDate']) : null;
+    }
 }

@@ -1,0 +1,12 @@
+{
+  "productId": "58994723-9b53-4eed-bfb6-13173c6ec67d",
+  "debitorId": "f1d7d286-b88b-4849-9cb3-e30dc22f9747",
+  "components": [
+    {
+      "productComponentId": "d0a7e6eb-8be7-433a-8d64-ffd750b92f49",
+      "productComponentVariantId": "b9608880-bbfc-4f99-85af-d05afb94007f",
+      "quantity": 1
+    }
+  ],
+  "trialPeriod": "14D"
+}

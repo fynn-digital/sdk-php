@@ -1,0 +1,232 @@
+{
+  "_pagination": {
+    "itemsPerPage": 100,
+    "currentPage": 1,
+    "pageTotalItems": 6,
+    "totalItems": 6,
+    "lastPage": 1
+  },
+  "data": [
+    {
+      "status": "STATUS_UNPAID",
+      "documentId": "RE0000000000010035",
+      "debitorId": "f1d7d286-b88b-4849-9cb3-e30dc22f9747",
+      "receiverAddressId": "d5f0a537-f56d-4bb0-bae0-d22ec70b52f2",
+      "dueDate": "2022-09-20T13:10:42+00:00",
+      "invoiceType": "TYPE_INVOICE",
+      "pdfUrl": "/invoices/c26fed33-64de-44ab-8db2-918170160336/download",
+      "notice": null,
+      "referencedInvoiceId": null,
+      "invoiceId": "c26fed33-64de-44ab-8db2-918170160336",
+      "paymentMethodId": "9ca313d9-a07f-4c08-8e09-c6a10923e978",
+      "netAmount": {
+        "amount": 1252550,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "grossAmount": {
+        "amount": 1490534,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "taxAmount": {
+        "amount": 237984,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "finalizationDate": "2022-09-06T13:10:56+00:00",
+      "creationDate": "2022-09-06T13:10:45+00:00",
+      "currencyCode": "EUR"
+    },
+    {
+      "status": "STATUS_PAID",
+      "documentId": "RE0000000000010034",
+      "debitorId": "2352757b-65c7-4b0a-9fa2-c64883315ae5",
+      "receiverAddressId": "c805ed02-bb24-4621-ae03-8944844fdb9b",
+      "dueDate": "2022-09-20T13:10:41+00:00",
+      "invoiceType": "TYPE_INVOICE",
+      "pdfUrl": "/invoices/c8a510fd-5b22-4bc1-9056-c6b263bb3198/download",
+      "notice": null,
+      "referencedInvoiceId": null,
+      "invoiceId": "c8a510fd-5b22-4bc1-9056-c6b263bb3198",
+      "paymentMethodId": "637d211a-ac00-40a6-a542-1d85369433c9",
+      "netAmount": {
+        "amount": 4900,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "grossAmount": {
+        "amount": 5831,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "taxAmount": {
+        "amount": 931,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "finalizationDate": "2022-09-06T13:10:44+00:00",
+      "creationDate": "2022-09-06T13:10:42+00:00",
+      "currencyCode": "EUR"
+    },
+    {
+      "status": "STATUS_UNPAID",
+      "documentId": "RE0000000000010033",
+      "debitorId": "f1d7d286-b88b-4849-9cb3-e30dc22f9747",
+      "receiverAddressId": "72aa30e0-e8c4-4ae2-bff5-311fd22752b7",
+      "dueDate": "2022-09-15T12:27:58+00:00",
+      "invoiceType": "TYPE_INVOICE",
+      "pdfUrl": "/invoices/e1a888c9-bdb5-4beb-a2f7-816de222be72/download",
+      "notice": null,
+      "referencedInvoiceId": null,
+      "invoiceId": "e1a888c9-bdb5-4beb-a2f7-816de222be72",
+      "paymentMethodId": "9ca313d9-a07f-4c08-8e09-c6a10923e978",
+      "netAmount": {
+        "amount": 44700,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "grossAmount": {
+        "amount": 53193,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "taxAmount": {
+        "amount": 8493,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "finalizationDate": "2022-09-01T12:28:00+00:00",
+      "creationDate": "2022-09-01T12:27:59+00:00",
+      "currencyCode": "EUR"
+    },
+    {
+      "status": "STATUS_UNPAID",
+      "documentId": "RE0000000000010032",
+      "debitorId": "f1d7d286-b88b-4849-9cb3-e30dc22f9747",
+      "receiverAddressId": "72aa30e0-e8c4-4ae2-bff5-311fd22752b7",
+      "dueDate": "2022-09-15T08:01:48+00:00",
+      "invoiceType": "TYPE_INVOICE",
+      "pdfUrl": "/invoices/6e37e0aa-3e26-4250-b909-185c49ced19b/download",
+      "notice": null,
+      "referencedInvoiceId": null,
+      "invoiceId": "6e37e0aa-3e26-4250-b909-185c49ced19b",
+      "paymentMethodId": "9ca313d9-a07f-4c08-8e09-c6a10923e978",
+      "netAmount": {
+        "amount": 0,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "grossAmount": {
+        "amount": 0,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "taxAmount": {
+        "amount": 0,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "finalizationDate": "2022-09-01T08:01:50+00:00",
+      "creationDate": "2022-09-01T08:01:49+00:00",
+      "currencyCode": "EUR"
+    },
+    {
+      "status": "STATUS_PAID",
+      "documentId": "RE0000000000010031",
+      "debitorId": "2352757b-65c7-4b0a-9fa2-c64883315ae5",
+      "receiverAddressId": "c805ed02-bb24-4621-ae03-8944844fdb9b",
+      "dueDate": "2022-09-15T08:01:47+00:00",
+      "invoiceType": "TYPE_INVOICE",
+      "pdfUrl": "/invoices/03620c67-cba7-456f-908b-9f0cad0d520d/download",
+      "notice": null,
+      "referencedInvoiceId": null,
+      "invoiceId": "03620c67-cba7-456f-908b-9f0cad0d520d",
+      "paymentMethodId": "637d211a-ac00-40a6-a542-1d85369433c9",
+      "netAmount": {
+        "amount": 14900,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "grossAmount": {
+        "amount": 17731,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "taxAmount": {
+        "amount": 2831,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "finalizationDate": "2022-09-01T08:01:49+00:00",
+      "creationDate": "2022-09-01T08:01:48+00:00",
+      "currencyCode": "EUR"
+    },
+    {
+      "status": "STATUS_PAID",
+      "documentId": "RE0000000000010030",
+      "debitorId": "2352757b-65c7-4b0a-9fa2-c64883315ae5",
+      "receiverAddressId": "c805ed02-bb24-4621-ae03-8944844fdb9b",
+      "dueDate": "2022-08-24T21:42:12+00:00",
+      "invoiceType": "TYPE_INVOICE",
+      "pdfUrl": "/invoices/d45619c6-0c80-40b3-a9a5-a93bc5ea1c78/download",
+      "notice": null,
+      "referencedInvoiceId": null,
+      "invoiceId": "d45619c6-0c80-40b3-a9a5-a93bc5ea1c78",
+      "paymentMethodId": "637d211a-ac00-40a6-a542-1d85369433c9",
+      "netAmount": {
+        "amount": 19963,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "grossAmount": {
+        "amount": 23756,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "taxAmount": {
+        "amount": 3793,
+        "precision": 2,
+        "currencyCode": "EUR"
+      },
+      "finalizationDate": "2022-08-10T21:42:13+00:00",
+      "creationDate": "2022-08-10T21:42:12+00:00",
+      "currencyCode": "EUR"
+    }
+  ],
+  "_transitions": {
+    "c26fed33-64de-44ab-8db2-918170160336": [
+      "remind",
+      "pay",
+      "cancel"
+    ],
+    "c8a510fd-5b22-4bc1-9056-c6b263bb3198": [
+      "remind",
+      "cancel",
+      "unpay",
+      "refund"
+    ],
+    "e1a888c9-bdb5-4beb-a2f7-816de222be72": [
+      "remind",
+      "pay",
+      "cancel"
+    ],
+    "6e37e0aa-3e26-4250-b909-185c49ced19b": [
+      "remind",
+      "pay",
+      "cancel"
+    ],
+    "03620c67-cba7-456f-908b-9f0cad0d520d": [
+      "remind",
+      "cancel",
+      "unpay",
+      "refund"
+    ],
+    "d45619c6-0c80-40b3-a9a5-a93bc5ea1c78": [
+      "remind",
+      "cancel",
+      "unpay",
+      "refund"
+    ]
+  }
+}

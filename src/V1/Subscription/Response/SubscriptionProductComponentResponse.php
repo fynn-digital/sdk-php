@@ -73,7 +73,7 @@ class SubscriptionProductComponentResponse
 
     public function getCancelationDate(): ?\DateTimeImmutable
     {
-        return $this->data['cancelationDate'] ? new \DateTimeImmutable($this->data['cancelationDate']) : null;
+        return $this->data['cancellationDate'] ? new \DateTimeImmutable($this->data['cancellationDate']) : null;
     }
 
     public function hideFull(): bool
@@ -94,11 +94,6 @@ class SubscriptionProductComponentResponse
     public function getVariantName(): ?string
     {
         return $this->data['variantName'] ?? null;
-    }
-
-    public function getEarliestCancellationDate(): ?\DateTimeImmutable
-    {
-        return $this->data['earliestCancellationDate'] ? new \DateTimeImmutable($this->data['earliestCancellationDate']) : null;
     }
 
     public function getContractStartDate(): ?\DateTimeImmutable

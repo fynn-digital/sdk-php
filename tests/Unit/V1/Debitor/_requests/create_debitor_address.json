@@ -1,0 +1,13 @@
+{
+  "salutation": "Herr",
+  "firstname": "Max",
+  "lastname": "Mustermann",
+  "company": "Some Company",
+  "street": "Some Street",
+  "housenumber": "1",
+  "zip": "12345",
+  "city": "Some City",
+  "country": "DE",
+  "type": "TYPE_INVOICE",
+  "isDefault": true
+}

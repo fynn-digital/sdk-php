@@ -33,11 +33,12 @@ class DebitorCreditBalanceService
     {
         try {
             $response = $this->client->request('POST', sprintf('/api/debitors/%s/creditBalance', $debitorId), [
-                'body' => [
+                'body' => json_encode([
                     'amount' => $amountInCents,
                     'description' => $description,
                     'referenceId' => $referenceId,
-                ],
+                    'expirationDate' => null,
+                ]),
             ]);
         } catch (ClientException $e) {
             throw ApiException::fromThrowable($e);

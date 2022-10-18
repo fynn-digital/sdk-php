@@ -14,7 +14,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Fynn\\Sdk\\": "src/"
+            "Fynn\\Sdk\\": "src/",
+            "Fynn\\Sdk\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -28,5 +29,8 @@
         "ext-json": "*",
         "ext-curl": "*",
         "guzzlehttp/guzzle": "^7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
     }
 }

@@ -1,0 +1,16 @@
+{
+  "title": "An error occurred",
+  "detail": "firstname: Dieser Wert sollte nicht leer sein.\nlastname: Dieser Wert sollte nicht leer sein.",
+  "violations": [
+    {
+      "propertyPath": "firstname",
+      "message": "Dieser Wert sollte nicht leer sein.",
+      "code": "c1051bb4-d103-4f74-8988-acbcafc7fdc3"
+    },
+    {
+      "propertyPath": "lastname",
+      "message": "Dieser Wert sollte nicht leer sein.",
+      "code": "c1051bb4-d103-4f74-8988-acbcafc7fdc3"
+    }
+  ]
+}

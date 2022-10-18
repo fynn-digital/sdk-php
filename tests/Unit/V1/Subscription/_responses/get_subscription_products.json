@@ -1,0 +1,52 @@
+{
+  "_pagination": {
+    "itemsPerPage": 100,
+    "currentPage": 1,
+    "pageTotalItems": 1,
+    "totalItems": 1,
+    "lastPage": 1
+  },
+  "data": [
+    {
+      "subscriptionProductId": "77f1f2d4-29ea-428d-8e8c-b589441a4af5",
+      "subscriptionId": "806c0681-eaef-4cdb-a1ef-fa683ff7a37b",
+      "originProductId": "987de151-0440-44d7-ad6b-7bbbb646a207",
+      "startDate": "2022-10-03T09:43:19+00:00",
+      "contractStartDate": "2022-10-03T09:43:19+00:00",
+      "endDate": null,
+      "title": "Test Product",
+      "description": "Some nice test product",
+      "cancellationPeriod": "1M",
+      "laterCancellationPeriod": "1M",
+      "contractPeriod": "12M",
+      "laterContractPeriod": "12M",
+      "productComponents": [
+        {
+          "subscriptionProductComponentId": "79a321d6-4ca9-4c08-978e-dd4f94fc820d",
+          "subscriptionId": "806c0681-eaef-4cdb-a1ef-fa683ff7a37b",
+          "subscriptionProductId": "77f1f2d4-29ea-428d-8e8c-b589441a4af5",
+          "originProductComponentId": "d0a7e6eb-8be7-433a-8d64-ffd750b92f49",
+          "originProductComponentVariantId": "b9608880-bbfc-4f99-85af-d05afb94007f",
+          "contractStartDate": "2022-10-03T09:43:19+00:00",
+          "startDate": "2022-10-03T09:43:19+00:00",
+          "endDate": null,
+          "name": "Add-On",
+          "variantName": "Standard",
+          "feePeriodUnit": "Stück",
+          "variantValue": "0",
+          "quantity": 5,
+          "customDescription": null,
+          "cancellationDate": null,
+          "hideFull": false,
+          "hideOnNullPrice": true,
+          "previousComponentId": null
+        }
+      ],
+      "customDescription": null,
+      "cancellationDate": null,
+      "earliestCancellationDate": "2023-10-03T09:43:19+00:00",
+      "billingAllignmentDayOfMonth": null,
+      "costCentre": null
+    }
+  ]
+}

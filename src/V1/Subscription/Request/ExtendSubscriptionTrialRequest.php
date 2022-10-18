@@ -8,7 +8,7 @@ class ExtendSubscriptionTrialRequest
 
     public function __construct(string $trialPeriod)
     {
-        if (!preg_match('/^P(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(\d+H)?(\d+I)?(\d+S)?$/', $trialPeriod)) {
+        if (!preg_match('/^(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(\d+H)?(\d+I)?(\d+S)?$/', $trialPeriod)) {
             throw new \InvalidArgumentException('Invalid trial period');
         }
 

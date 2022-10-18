@@ -69,8 +69,6 @@ class SubscriptionService
             throw ApiException::fromThrowable($e);
         }
 
-        $data = json_decode($response->getBody()->getContents(), true)['data'];
-
         return new SubscriptionResponse($data);
     }
 

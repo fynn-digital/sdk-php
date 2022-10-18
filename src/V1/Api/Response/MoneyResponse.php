@@ -28,6 +28,6 @@ class MoneyResponse
 
     public function getCentAmount(): float
     {
-        return $this->data['amount'] / pow(10, $this->data['precision']);
+        return $this->data['amount'] / pow(10, $this->data['precision'] - 2);
     }
 }

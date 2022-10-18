@@ -1,0 +1,91 @@
+{
+  "_pagination": {
+    "itemsPerPage": 25,
+    "currentPage": 1,
+    "pageTotalItems": 3,
+    "totalItems": 3,
+    "lastPage": 1
+  },
+  "data": [
+    {
+      "debitorId": "f1d7d286-b88b-4849-9cb3-e30dc22f9747",
+      "firstname": "Finn",
+      "lastname": "TestKunde",
+      "language": "de",
+      "taxExempt": "none",
+      "currencyCode": "EUR",
+      "datevDebitorId": "00010001",
+      "vatId": "DE123456789",
+      "status": "STATUS_ACTIVE",
+      "commercialRegister": {
+        "name": null,
+        "id": null
+      },
+      "mobilephoneNumber": null,
+      "company": "Finn GmbH",
+      "customerNumber": "K0000000000010002",
+      "countryCode": "DE",
+      "isVatIdValid": true,
+      "gender": null,
+      "totalTurnOverRank": null
+    },
+    {
+      "debitorId": "af3f7f74-a993-4189-bf89-2bbb4cdba19b",
+      "firstname": "Test China",
+      "lastname": "Kunde",
+      "language": "de",
+      "taxExempt": "none",
+      "currencyCode": "EUR",
+      "datevDebitorId": "9999999",
+      "vatId": "1234234",
+      "status": "STATUS_ACTIVE",
+      "commercialRegister": {
+        "name": "GCC",
+        "id": "CN123534"
+      },
+      "mobilephoneNumber": null,
+      "company": "Great China Company",
+      "customerNumber": "K0000000000010001",
+      "countryCode": "CN",
+      "isVatIdValid": true,
+      "gender": null,
+      "totalTurnOverRank": null
+    },
+    {
+      "debitorId": "2352757b-65c7-4b0a-9fa2-c64883315ae5",
+      "firstname": "Demo",
+      "lastname": "Kunde",
+      "language": "de",
+      "taxExempt": "none",
+      "currencyCode": "EUR",
+      "datevDebitorId": "10000",
+      "vatId": null,
+      "status": "STATUS_ACTIVE",
+      "commercialRegister": {
+        "name": null,
+        "id": null
+      },
+      "mobilephoneNumber": null,
+      "company": null,
+      "customerNumber": "K0000000000010000",
+      "countryCode": "DE",
+      "isVatIdValid": false,
+      "gender": null,
+      "totalTurnOverRank": 1
+    }
+  ],
+  "_transitions": {
+    "f1d7d286-b88b-4849-9cb3-e30dc22f9747": [
+      "archive",
+      "suspend"
+    ],
+    "af3f7f74-a993-4189-bf89-2bbb4cdba19b": [
+      "archive",
+      "suspend"
+    ],
+    "2352757b-65c7-4b0a-9fa2-c64883315ae5": [
+      "archive",
+      "suspend"
+    ]
+  }
+}

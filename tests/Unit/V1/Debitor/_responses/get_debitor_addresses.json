@@ -1,0 +1,49 @@
+{
+  "_pagination": {
+    "itemsPerPage": 100,
+    "currentPage": 1,
+    "pageTotalItems": 2,
+    "totalItems": 2,
+    "lastPage": 1
+  },
+  "data": [
+    {
+      "city": "Teststadt",
+      "zip": "23456",
+      "housenumber": "1",
+      "country": "DE",
+      "company": "Finn GmbH",
+      "firstname": null,
+      "lastname": null,
+      "salutation": "Herr",
+      "addition": null,
+      "costCentre": null,
+      "street": "teststraße",
+      "id": "72aa30e0-e8c4-4ae2-bff5-311fd22752b7",
+      "type": "TYPE_DEFAULT",
+      "isDefault": false,
+      "debitorId": "f1d7d286-b88b-4849-9cb3-e30dc22f9747",
+      "previousAddressId": null,
+      "status": "active"
+    },
+    {
+      "city": "Teststadt",
+      "zip": "23456",
+      "housenumber": "12-13",
+      "country": "DE",
+      "company": "Test",
+      "firstname": "TEST 2",
+      "lastname": "Test",
+      "salutation": "Herr",
+      "addition": null,
+      "costCentre": null,
+      "street": "Teststraße",
+      "id": "d5f0a537-f56d-4bb0-bae0-d22ec70b52f2",
+      "type": "TYPE_DEFAULT",
+      "isDefault": true,
+      "debitorId": "f1d7d286-b88b-4849-9cb3-e30dc22f9747",
+      "previousAddressId": null,
+      "status": "active"
+    }
+  ]
+}

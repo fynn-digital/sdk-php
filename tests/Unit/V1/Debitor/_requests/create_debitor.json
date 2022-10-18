@@ -1,0 +1,30 @@
+{
+  "email": "hi@fynn.eu",
+  "firstname": "Max",
+  "lastname": "Mustermann",
+  "company": "Some Company",
+  "language": "de",
+  "datevDebitorId": "10000",
+  "vatId": "DE1239234",
+  "countryCode": "DE",
+  "currencyCode": "EUR",
+  "mobilephoneNumber": "+4912372348234",
+  "commercialRegister": {
+    "name": "Amtsgericht K\u00f6ln",
+    "id": "HRB 123456"
+  },
+  "invoiceEmailAddresses": [
+    {
+      "email": "hi@fynn.eu",
+      "receiverName": "Max Mustermann",
+      "default": true
+    }
+  ],
+  "defaultEmailAddresses": [
+    {
+      "email": "hi@fynn.eu",
+      "receiverName": "Max Mustermann",
+      "default": true
+    }
+  ]
+}

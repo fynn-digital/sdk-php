@@ -81,8 +81,8 @@ class CreateDebitorRequest
     {
         return [
             'email' => $this->email,
-            'firstName' => $this->firstName,
-            'lastName' => $this->lastName,
+            'firstname' => $this->firstName,
+            'lastname' => $this->lastName,
             'company' => $this->company,
             'language' => $this->language,
             'datevDebitorId' => $this->datevNumber,

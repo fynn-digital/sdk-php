@@ -86,7 +86,7 @@ class SubscriptionProductResponse
         return $this->data['quantity'];
     }
 
-    public function getBillingAllignmentDayOfMonth(): int
+    public function getBillingAllignmentDayOfMonth(): ?int
     {
         return $this->data['billingAllignmentDayOfMonth'];
     }
@@ -98,6 +98,6 @@ class SubscriptionProductResponse
     {
         return array_map(function (array $component) {
             return new SubscriptionProductComponentResponse($component);
-        }, $this->data['components'] ?? []);
+        }, $this->data['components'] ?? $this->data['productComponents'] ?? []);
     }
 }
