@@ -10,6 +10,7 @@ class CreateProductCartRequest
     private string $productId;
     private ?string $debitorId;
     private ?string $trialPeriod;
+    private ?string $redirectUrl;
 
     /**
      * @var CreateProductCartComponentRequest[]
@@ -21,12 +22,14 @@ class CreateProductCartRequest
         string $productId,
         ?string $trialPeriod = null,
         ?string $customDescription = null,
+        ?string $redirectUrl = null,
     ) {
         $this->debitorId = $debitorId;
         $this->productId = $productId;
         $this->trialPeriod = $trialPeriod;
         $this->components = [];
         $this->customDescription = $customDescription;
+        $this->redirectUrl = $redirectUrl;
     }
 
     public function addComponent(CreateProductCartComponentRequest $component): void
@@ -42,6 +45,7 @@ class CreateProductCartRequest
             'components' => array_map(fn (CreateProductCartComponentRequest $component) => $component->toArray(), $this->components),
             'trialPeriod' => $this->trialPeriod,
             'customDescription' => $this->customDescription,
+            'redirectUrl' => $this->redirectUrl,
         ];
     }
 }
