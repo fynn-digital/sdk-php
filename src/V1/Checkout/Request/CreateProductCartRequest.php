@@ -6,6 +6,7 @@ namespace Fynn\Sdk\V1\Checkout\Request;
 
 class CreateProductCartRequest
 {
+    private ?string $customDescription;
     private string $productId;
     private ?string $debitorId;
     private ?string $trialPeriod;
@@ -18,12 +19,14 @@ class CreateProductCartRequest
     public function __construct(
         ?string $debitorId,
         string $productId,
-        ?string $trialPeriod = null
+        ?string $trialPeriod = null,
+        ?string $customDescription = null,
     ) {
         $this->debitorId = $debitorId;
         $this->productId = $productId;
         $this->trialPeriod = $trialPeriod;
         $this->components = [];
+        $this->customDescription = $customDescription;
     }
 
     public function addComponent(CreateProductCartComponentRequest $component): void
@@ -37,7 +40,8 @@ class CreateProductCartRequest
             'productId' => $this->productId,
             'debitorId' => $this->debitorId,
             'components' => array_map(fn (CreateProductCartComponentRequest $component) => $component->toArray(), $this->components),
-            'trialPeriod' => $this->trialPeriod
+            'trialPeriod' => $this->trialPeriod,
+            'customDescription' => $this->customDescription,
         ];
     }
 }
