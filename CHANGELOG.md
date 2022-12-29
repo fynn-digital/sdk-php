@@ -4,6 +4,18 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [0.4.0](https://github.com/fynn-digital/sdk-php/compare/v0.3.1...v0.4.0) (2022-12-29)
+
+### Features
+
+
+##### Checkout
+
+* Allow to set a custom description of a product, on cart creation ([a545e3](https://github.com/fynn-digital/sdk-php/commit/a545e3b84abdd5781e5ce23d567584217a354203))
+
+
+---
+
 ## [0.3.0](https://github.com/fynn-digital/sdk-php/compare/v0.2.0...v0.3.0) (2022-10-18)
 
 ### ⚠ BREAKING CHANGES
