@@ -4,6 +4,22 @@
 All notable changes to this project will be documented in this file.
 <!--- END HEADER -->
 
+## [0.5.0](https://github.com/fynn-digital/sdk-php/compare/v0.4.0...v0.5.0) (2022-12-30)
+
+### Features
+
+
+##### Cart
+
+* Define a redirect url on cart creation, which can differ from sdk checkout settings definition ([07ce10](https://github.com/fynn-digital/sdk-php/commit/07ce1086ff5865acd028372c9da8eaac15de82ec))
+
+##### Checkout
+
+* Allow to define a checkout style label, to use different brands for a cart ([586f6b](https://github.com/fynn-digital/sdk-php/commit/586f6b3883d8ea1c11dfc8274665c29f9b42ee35))
+
+
+---
+
 ## [0.4.0](https://github.com/fynn-digital/sdk-php/compare/v0.3.1...v0.4.0) (2022-12-29)
 
 ### Features
