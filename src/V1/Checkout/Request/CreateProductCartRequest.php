@@ -11,6 +11,7 @@ class CreateProductCartRequest
     private ?string $debitorId;
     private ?string $trialPeriod;
     private ?string $redirectUrl;
+    private string $label;
 
     /**
      * @var CreateProductCartComponentRequest[]
@@ -23,6 +24,7 @@ class CreateProductCartRequest
         ?string $trialPeriod = null,
         ?string $customDescription = null,
         ?string $redirectUrl = null,
+        string $label = 'default'
     ) {
         $this->debitorId = $debitorId;
         $this->productId = $productId;
@@ -30,6 +32,7 @@ class CreateProductCartRequest
         $this->components = [];
         $this->customDescription = $customDescription;
         $this->redirectUrl = $redirectUrl;
+        $this->label = $label;
     }
 
     public function addComponent(CreateProductCartComponentRequest $component): void
@@ -46,6 +49,7 @@ class CreateProductCartRequest
             'trialPeriod' => $this->trialPeriod,
             'customDescription' => $this->customDescription,
             'redirectUrl' => $this->redirectUrl,
+            'label' => $this->label,
         ];
     }
 }
